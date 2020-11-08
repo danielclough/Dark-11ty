@@ -16,11 +16,24 @@
   /* Set the width of the sidebar to 120px */
   .w3-sidebar {width: 120px;background: #222;}
   /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
-  #main {margin-left: 120px}
+  #main {}
   /* Remove margins from "page content" on small screens TODO add back in*/
   {% raw %}
-  
-  @media only screen and (max-width:600px) {#main { margin-left:0}}
+
+  .w3-content { max-width: 90% !important }
+  .w3-text-grey {font-size: 1rem;}
+    #main { margin-left:0}
+
+  .w3-image-wide {width: 100% !important;}
+  .w3-image-full {width: 100% !important;}
+
+  @media only screen and (min-width:1400px) {
+  .w3-content { max-width: 60% !important }
+  .w3-text-grey {font-size: 2.5rem;}
+
+  .w3-image-wide {width: 65% !important;}
+  .w3-image-full {width: 100% !important;}
+  }
   
   {% endraw %}
   
@@ -35,7 +48,7 @@
       <!-- Icon Bar (Sidebar - hidden on small screens) -->
 <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
   <!-- Avatar image in top left corner -->
-  <img src="{{ '/img/w3images/avatar_smoke.jpg' | url }}" style="width:100%">
+  <img src="{{ '/strains/nugs/490_holding-mm.jpg' | url }}" style="width:100%">
 
   {#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
   {%- for entry in collections.all | eleventyNavigation %}
@@ -52,24 +65,15 @@
       <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
         <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
         {%- for entry in collections.all | eleventyNavigation %}
-        <a href="{{ entry.url | url }}" class="w3-bar-item w3-button" style="width:20% !important">{{ entry.title}}</a>
+        <a href="{{ entry.url | url }}" class="w3-bar-item w3-button" style="width:25% !important">{{ entry.title}}</a>
         {%- endfor %}
         </div>
       </div>
-    <div class="w3-padding-large" id="main">
+    <div id="main">
  
 
     <main {% if templateClass %} class="{{ templateClass }}"{% endif %}>
-      <div class="warning">
-        <ol>
-          <li>Edit the <code>_data/metadata.json</code> with your blog’s information.</li>
-          <li>(Optional) Edit <code>.eleventy.js</code> with your <a href="https://www.11ty.dev/docs/config/">configuration preferences</a>.</li>
-          <li>Delete this message from <code>_includes/layouts/base.njk</code>.</li>
-        </ol>
-        <p><em>This is an <a href="https://www.11ty.io/">Eleventy project</a> created from the <a href="https://github.com/11ty/eleventy-base-blog"><code>eleventy-base-blog</code> repo</a>.</em></p>
-      </div>
-
-      {{ content | safe }}
+       {{ content | safe }}
     </main>
 
       <!-- Footer -->
@@ -79,8 +83,7 @@
     <i class="fa fa-snapchat w3-hover-opacity"></i>
     <i class="fa fa-pinterest-p w3-hover-opacity"></i>
     <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
-    <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+    <p class="w3-medium">Bomb Weed ©<a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">C420</a></p>
   <!-- End footer -->
   </footer>
 

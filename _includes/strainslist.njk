@@ -1,0 +1,21 @@
+<div class="w3-content w3-justify w3-text-grey w3-padding-64" id="strains">
+
+<h1>Strains</h1>
+<br/>
+
+<ol reversed class="strainlist" style="counter-reset: start-from {{ (strainslistCounter or strainslist.length) + 1 }}">
+{% for strain in strainslist | reverse %}
+  <div class="w3-content w3-section">
+    <a href="{{ strain.url | url }}" class="strainlist-link">
+      <img src="{{ strain.data.thumbnail }}" alt="{{strain.description}}" class="w3-image-wide">
+      <ul class="strainlist-item{% if strain.url == url %} strainlist-item-active{% endif %}">
+    {% if strain.data.title %}{{ strain.data.title }}{% else %}<code>{{ strain.url }}</code>{% endif %}
+      </ul>
+    </a>
+    <p> {{strain.data.type}} </p>
+    <p> {{strain.data.aroma}} </p>
+    <p> {{strain.data.effects}} </p>
+  </div>
+{% endfor %}
+</ol>
+</div>

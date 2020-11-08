@@ -1,0 +1,125 @@
+---
+layout: layouts/base.njk
+templateClass: tmpl-home
+---
+{{ content | safe }}
+
+<header class="w3-padding-32 w3-center w3-black" id="home">
+ <h1 class="w3-jumbo"><span class="w3-hide-small"></span> {{ title }}</h1>
+  <p>{{metadata.title}}</p>
+  <img src="{{ image }}" alt="{{description}}" class="w3-image-wide">
+  <img src="{{ '/img/wood/4096_wood.jpg' | url }}" alt="plank" class="w3-image-full">
+</header>
+
+
+<!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="strain">
+    <h2 class="w3-text-light-grey">{{title}}</h2>
+    <hr style="width:200px" class="w3-opacity">
+        <ul>
+          <p><b>AKA:</b> {{aka}} </p>
+        </ul>
+        <ul>
+          <p><b>Type:</b> {{type}} </p>
+        </ul>
+        <ul>
+          <p><b>Genealogy:</b> {{genealogy}} </p>
+        </ul>
+        <ul>
+          <p><b>Appearance:</b> {{appearance}} </p>
+        </ul>
+        <ul>
+          <p><b>Aroma:</b> {{aroma}} </p>
+        </ul>
+        <ul>
+          <p><b>Effects:</b> {{effects}} </p>
+        </ul>
+        
+
+    <h3 class="w3-padding-16 w3-text-light-grey">Feels:</h3>
+    <p class="w3-wide">{{feels1}}</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:{{feels1v}}"></div>
+    </div>
+    <p class="w3-wide">{{feels2}}</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:{{feels2v}}"></div>
+    </div>
+    <p class="w3-wide">{{feels3}}</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:{{feels3v}}"></div>
+    </div><br>
+    
+    <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
+      <div class="w3-third w3-section">
+        <span class="w3-xlarge">{{stat1v}}</span><br>
+        {{stat1}}
+      </div>
+      <div class="w3-third w3-center center w3-section">
+        <span class="w3-xlarge">{{stat2v}}</span><br>
+        {{stat2}}
+      </div>
+      <div class="w3-third w3-section">
+        <span class="w3-xlarge">{{stat3v}}</span><br>
+          <small>{{stat3}}</small>
+      </div>
+    </div>
+
+    
+    <!-- Grid for pricing tables -->
+    <h3 class="w3-padding-16 w3-text-light-grey">My Price</h3>
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half w3-margin-bottom">
+        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">Basic</li>
+          <li class="w3-padding-16">1 Ounce</li>
+          <li class="w3-padding-16">
+            <h2>{{bPriceM}}</h2>
+            <span class="w3-opacity">per month</span>
+          </li>
+          <li class="w3-padding-16">
+            <h2>{{bPriceS}}</h2>
+            <span class="w3-opacity">single</span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
+          </li>
+        </ul>
+      </div>
+
+      <div class="w3-half">
+        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">Pro</li>
+          <li class="w3-padding-16">1 Pound</li>
+          <li class="w3-padding-16">
+            <h2>{{pPriceM}}</h2>
+            <span class="w3-opacity">per month</span>
+          </li>
+          <li class="w3-padding-16">
+            <h2>{{pPriceS}}</h2>
+            <span class="w3-opacity">single</span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
+          </li>
+        </ul>
+      </div>
+    <!-- End Grid/Pricing tables -->
+    </div>
+    
+    <!-- Testimonials -->
+    <h3 class="w3-padding-24 w3-text-light-grey">Reputation</h3>  
+    <img src="{{ testPic1 }}" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <p><span class="w3-xlarge w3-margin-right">{{test1}}</span></p>
+    
+    <img src="{{ testPic2 }}" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <p><span class="w3-xlarge w3-margin-right">{{test2}}</span></p>
+
+    <img src="{{ testPic3 }}" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <p><span class="w3-xlarge w3-margin-right">{{test3}}</span></p>
+  <!-- End About Section -->
+  </div>
+
+
+
+  </div>

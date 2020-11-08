@@ -1,15 +1,15 @@
 {
-  "title": "John Doe",
-  "url": "https://myurl.com/",
-  "description": "Photographer and Web Designer",
+  "title": "C420",
+  "url": "https://c420.danielc.us/",
+  "description": "Bomb Weed",
   "feed": {
-    "subtitle": "I am writing about my experiences as a naval navel-gazer.",
+    "subtitle": "Explosions of pleasure.",
     "filename": "feed.xml",
     "path": "/feed/feed.xml",
-    "id": "https://myurl.com/"
+    "id": "https://c420.danielc.us/"
   },
   "author": {
-    "name": "Your Name Here",
-    "email": "youremailaddress@example.com"
+    "name": "Daniel Clough",
+    "email": "danielclough@protonmail.com"
   }
 }

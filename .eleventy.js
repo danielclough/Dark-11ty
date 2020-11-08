@@ -36,6 +36,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addCollection("tagList", require("./_11ty/getTagList"));
 
   eleventyConfig.addPassthroughCopy("img");
+  eleventyConfig.addPassthroughCopy("strains/nugs");
   eleventyConfig.addPassthroughCopy("files");
   eleventyConfig.addPassthroughCopy("css");
 
