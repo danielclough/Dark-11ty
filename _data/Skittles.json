@@ -1,0 +1,58 @@
+{
+	"title": "Zkittlez",
+	"description": "Skittles -> Indica Dominant Hybrid",
+	"date": "2020-11-07",
+	"link": "/strains/skittles",
+	"image": "/strains/nugs/791_sk.jpg",
+	"thumbnail": "/strains/nugs/490_sk-sq.jpg",
+	"tags": [
+		"photo", "bud"
+	],
+	"layout": "layouts/strain.njk",
+	"eleventyNavigation": {
+	  "key": "Skittles",
+	  "order": "2"
+	},
+	"aka": "Skittles, Skittlz ",
+	"type": "Indica Dominant Hybrid",
+	"type-simple": "Indica",
+	"genealogy": "Grape Ape, Grapefruit, and Undisclosed",
+	"appearance": "Light Green; Chunky Colas",
+	"aroma": "Sweet, tropical blend of fruit flavors",
+	"effects": "Calming, Relaxing, and Giggly",
+	"awards": "1st Place at the 2016 Emerald Cup; 1st Place Indica at the 2015 Cannabis Cups in San Francisco and in Michigan.",
+	"feels": {
+		"first": "Calming",
+		"firstValue": "80%",
+		"second": "Muscle Relaxing",
+		"secondValue": "60%",
+		"third": "Sleepy",
+		"thirdValue": "20%"
+	},
+	"stats":{
+		"type": "Indica",
+		"typeValue": "80%",
+		"thc": "THC",
+		"thcValue": "19%",
+		"third": "Above Average",
+		"thirdValue": "7%"
+	},
+	"prices": {
+		"basic": {
+			"monthly": "$ 139",
+			"single": "$ 159"
+		},
+		"pro": {
+			"monthly": "$ 1699",
+			"single": "$ 1899"
+		}
+	},
+	"testimonials": {
+		"first":  "Skittles is a taste explosion!",
+		"pic1":   "/assets/img/faces/omid.jpg",
+		"second": "Taste the Rainbow!",
+		"pic2":   "/assets/img/faces/alicia.jpg",
+		"third":  "Died of the giggles from the Skittles!",
+		"pic3":   "/assets/img/faces/muertos.jpg"
+	}
+}

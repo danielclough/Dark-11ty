@@ -1,5 +1,5 @@
 ---
-layout: layouts/base.njk
+layout: layouts/base2.njk
 templateClass: tmpl-home
 ---
 {{ content | safe }}
@@ -8,7 +8,7 @@ templateClass: tmpl-home
  <h1 class="w3-jumbo"><span class="w3-hide-small"></span> {{ title }}</h1>
   <p>{{metadata.title}}</p>
   <img src="{{ image }}" alt="{{description}}" class="w3-image-wide">
-  <img src="{{ '/img/wood/791_wood.jpg' | url }}" alt="plank" class="w3-image-full">
+  <img src="{{ '/assets/img/wood/791_wood.jpg' | url }}" alt="plank" class="w3-image-full">
 </header>
 
 
@@ -37,31 +37,31 @@ templateClass: tmpl-home
         
 
     <h3 class="w3-padding-16 w3-text-light-grey">Feels:</h3>
-    <p class="w3-wide">{{feels1}}</p>
+    <p class="w3-wide">{{feels.first}}</p>
     <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:{{feels1v}}"></div>
+      <div class="w3-dark-grey" style="height:28px;width:{{feels.firstValue}}"></div>
     </div>
-    <p class="w3-wide">{{feels2}}</p>
+    <p class="w3-wide">{{feels.second}}</p>
     <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:{{feels2v}}"></div>
+      <div class="w3-dark-grey" style="height:28px;width:{{feels.secondValue}}"></div>
     </div>
-    <p class="w3-wide">{{feels3}}</p>
+    <p class="w3-wide">{{feels.third}}</p>
     <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:{{feels3v}}"></div>
+      <div class="w3-dark-grey" style="height:28px;width:{{feels.thirdValue}}"></div>
     </div><br>
     
     <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
       <div class="w3-third w3-section">
-        <span class="w3-xlarge">{{stat1v}}</span><br>
-        {{stat1}}
+        <span class="w3-xlarge">{{stats.typeValue}}</span><br>
+        {{stats.type}}
       </div>
       <div class="w3-third w3-center center w3-section">
-        <span class="w3-xlarge">{{stat2v}}</span><br>
-        {{stat2}}
+        <span class="w3-xlarge">{{stats.thcValue}}</span><br>
+        {{stats.thc}}
       </div>
       <div class="w3-third w3-section">
-        <span class="w3-xlarge">{{stat3v}}</span><br>
-          <small>{{stat3}}</small>
+        <span class="w3-xlarge">{{stats.thirdValue}}</span><br>
+          <small>{{stats.third}}</small>
       </div>
     </div>
 
@@ -74,11 +74,11 @@ templateClass: tmpl-home
           <li class="w3-dark-grey w3-xlarge w3-padding-32">Basic</li>
           <li class="w3-padding-16">1 Ounce</li>
           <li class="w3-padding-16">
-            <h2>{{bPriceM}}</h2>
+            <h2>{{prices.basic.monthly}}</h2>
             <span class="w3-opacity">per month</span>
           </li>
           <li class="w3-padding-16">
-            <h2>{{bPriceS}}</h2>
+            <h2>{{prices.basic.single}}</h2>
             <span class="w3-opacity">single</span>
           </li>
           <li class="w3-light-grey w3-padding-24">
@@ -92,11 +92,11 @@ templateClass: tmpl-home
           <li class="w3-dark-grey w3-xlarge w3-padding-32">Pro</li>
           <li class="w3-padding-16">1 Pound</li>
           <li class="w3-padding-16">
-            <h2>{{pPriceM}}</h2>
+            <h2>{{prices.pro.monthly}}</h2>
             <span class="w3-opacity">per month</span>
           </li>
           <li class="w3-padding-16">
-            <h2>{{pPriceS}}</h2>
+            <h2>{{prices.pro.single}}</h2>
             <span class="w3-opacity">single</span>
           </li>
           <li class="w3-light-grey w3-padding-24">
@@ -109,14 +109,14 @@ templateClass: tmpl-home
     
     <!-- Testimonials -->
     <h3 class="w3-padding-24 w3-text-light-grey">Reputation</h3>  
-    <img src="{{ testPic1 }}" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
-    <p><span class="w3-xlarge w3-margin-right">{{test1}}</span></p>
+    <img src="{{ testimonials.pic1 }}" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <p><span class="w3-xlarge w3-margin-right">{{testimonials.first}}</span></p>
     
-    <img src="{{ testPic2 }}" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
-    <p><span class="w3-xlarge w3-margin-right">{{test2}}</span></p>
+    <img src="{{ testimonials.pic2 }}" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <p><span class="w3-xlarge w3-margin-right">{{testimonials.second}}</span></p>
 
-    <img src="{{ testPic3 }}" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
-    <p><span class="w3-xlarge w3-margin-right">{{test3}}</span></p>
+    <img src="{{ testimonials.pic3 }}" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <p><span class="w3-xlarge w3-margin-right">{{testimonials.third}}</span></p>
   <!-- End About Section -->
   </div>
 

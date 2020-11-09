@@ -1,0 +1,57 @@
+{
+	"title": "Magic Melon",
+	"description": "Magic Melon -> Sativa Dominant Hybrid",
+	"date": "2020-11-07",
+	"image": "/strains/nugs/791_mm-3.jpg",
+	"thumbnail": "/strains/nugs/490_mm-4-sq.jpg",
+	"link": "/strains/magic-melon",
+	"tags": [
+	  "photo", "awesome" 
+	],
+	"layout": "layouts/strain.njk",
+	"eleventyNavigation": {
+		  "key": "Magic Melon",
+		  "order": "4"
+	},
+	"aka": "Mango Melon",
+	"type": "Sativa Dominant Hybrid",
+	"type-simple": "Sativa",
+	"genealogy": "Mango Trees, Honeydew Melon, and Mango Sherbert",
+	"appearance": "Lime green buds have hints of purple",
+	"aroma": "Cantaloupe, and Watermelon, with Grassy notes",
+	"effects": "Energetic, Relaxed, Focused, and Giggly",
+	"feels": {
+		"first": "Energetic",
+		"firstValue": "80%",
+		"second": "Giggly",
+		"secondValue": "55%",
+		"third": "Anxious",
+		"thirdValue": "12%"
+	},
+	"stats":{
+		"type": "Sativa",
+		"typeValue": "70%",
+		"thc": "THC",
+		"thcValue": "21%",
+		"third": "Above Average",
+		"thirdValue": "9%"
+	},
+	"prices": {
+		"basic": {
+			"monthly": "$ 149",
+			"single": "$ 169"
+		},
+		"pro": {
+			"monthly": "$ 1799",
+			"single": "$ 1999"
+		}
+	},
+	"testimonials": {
+		"first": "Magic Melon got me like Whoa!",
+		"testPic1": "/img/faces/DAndre.jpg",
+		"second": "I laughed all night!",
+		"testPic2": "/img/faces/jen.jpg",
+		"third": "Good strain for being productive!",
+		"testPic3": "/img/faces/reading.jpg"
+	}
+}
